@@ -1,0 +1,109 @@
+//custom Peregrine bootstrap buttons
+//overwriting bootstrap colors
+.mg5{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.mg10{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.pg-btn{
+  color: @menu-hover;
+  .sans-serif-font;
+  font-weight: 400;
+  padding: 6px 12px 6px 12px;
+  .popup-window-corner(10px);
+
+  &:hover,
+  &:focus,
+  &.focus {
+    color: @menu-link;
+    text-decoration: none;
+    .popup-window-corner(10px);
+  }
+}
+
+.btn-primary{
+  background-color: @color-normal;
+  .color-border;
+}
+
+.btn-info{
+  background-color: @color-info;
+}
+
+.btn-success{
+  background-color: @color-sucess;
+}
+
+.btn-warning{
+  background-color: @color-warning;
+}
+
+.btn-danger{
+  background-color: @color-danger;
+}
+
+
+///////////////////////////
+.pg-btn-sm{
+  font-size: 16px;
+  padding: .25rem .5rem;
+}
+
+.pg-btn-lg{
+  font-size: 20px;
+  padding: .75rem 1.5rem;
+}
+.pg-btn-xl{
+  font-size: 28px;
+  padding: 20px 40px;
+}
+
+
+
+.pg-btn-normal{
+  .btn-primary;
+  .pg-btn;
+}
+
+.pg-btn-info{
+    .btn-info;
+    .pg-btn;
+}
+
+.pg-btn-success{
+    .pg-btn;
+    .btn-success;
+}
+
+.pg-btn-warning{
+    .pg-btn;
+    .btn-warning;
+}
+
+.pg-btn-danger{
+    .pg-btn;
+    .btn-danger;
+}
+
+//
+// .btn {
+//   display: inline-block;
+//   margin-bottom: 0; // For input.btn
+//   //font-weight: @btn-font-weight;
+//   text-align: center;
+//   vertical-align: middle;
+//   touch-action: manipulation;
+//   cursor: pointer;
+//   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+//   border: 1px solid transparent;
+//   white-space: nowrap;
+//   //.button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @btn-border-radius-base);
+//   //.user-select(none);
+//
+//
+// }

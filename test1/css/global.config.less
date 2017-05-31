@@ -1,0 +1,75 @@
+// Global style for all browser support
+// ==========================================================================
+
+//== Media queries breakpoints
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen for older phone
+@screen-xs-min:              480px;
+// Small phone + tablet
+@screen-sm-min:              768px;
+// Medium screen for older desktop
+@screen-md-min:              992px;
+// Large screen and wide desktop
+@screen-lg-min:              1200px;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);
+
+/*==========  Mobile First Method - reference only ==========*/
+
+    /* Custom, iPhone Retina */
+    // @media only screen and (min-width : 320px) {
+    //
+    // }
+    //
+    // /* Extra Small Devices, Phones */
+    // @media only screen and (min-width : 480px) {
+    //
+    // }
+    //
+    // /* Small Devices, Tablets */
+    // @media only screen and (min-width : 768px) {
+    //
+    // }
+    //
+    // /* Medium Devices, Desktops */
+    // @media only screen and (min-width : 992px) {
+    //
+    // }
+    //
+    // /* Large Devices, Wide Screens */
+    // @media only screen and (min-width : 1200px) {
+    //
+    // }
+    //
+    //
+    //
+    // /*==========  Non-Mobile First Method  ==========*/
+    //
+    // /* Large Devices, Wide Screens */
+    // @media only screen and (max-width : 1200px) {
+    //
+    // }
+    //
+    // /* Medium Devices, Desktops */
+    // @media only screen and (max-width : 992px) {
+    //
+    // }
+    //
+    // /* Small Devices, Tablets */
+    // @media only screen and (max-width : 768px) {
+    //
+    // }
+    //
+    // /* Extra Small Devices, Phones */
+    // @media only screen and (max-width : 480px) {
+    //
+    // }
+    //
+    // /* Custom, iPhone Retina */
+    // @media only screen and (max-width : 320px) {
+    //
+    // }
