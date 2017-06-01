@@ -7,6 +7,7 @@
 @import "typography.less";
 @import "jumbotron.less";
 @import "banners.less";
+@import "breadcrumb.less";
 
 .pg-box-icon{
   //auto scroll for tight screen
@@ -14,7 +15,7 @@
   >div{
     min-height: 290px;
     max-height: 290px;
-    overflow: scroll;
+    overflow: auto;
   }
 }
 
@@ -51,6 +52,10 @@
   .ng-shadow;
   padding: 15px 15px 15px 15px;
   background-color: @theme-secondary;
+  @media(max-width:@screen-xs-max) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 .ng-shadow{
@@ -332,7 +337,8 @@ h3,
 h4,
 h5,
 h6 {
-    .sans-serif-font;
+    //.sans-serif-font;
+    .comfortaa-font;
 }
 
 h4{

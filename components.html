@@ -17,6 +17,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700" rel="stylesheet">
 
   <link rel="stylesheet/less" type="text/css" href="css/peregrine.main.less" />
 
@@ -34,7 +35,7 @@
             </button>
             <a class="navbar-brand" href="index.html">
               <img src="img/logo-45.png" class="navbar-logo">
-               <span>Peregrine</span>
+               <span class="navbar-brand-text">Peregrine</span>
               </a>
         </div>
 
@@ -47,7 +48,7 @@
                 <li class="dropdown">
                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Product Features <span class="caret"></span></a>
                           <ul class="dropdown-menu">
-                            <li><a  class="" href="index.html">Content Management</a></li>
+                            <li><a  class="" href="index.html#features">Content Management</a></li>
                             <li><a  class="" href="index.html">Custom Integration</a></li>
                           </ul>
                 </li>
@@ -121,41 +122,51 @@
           </div>
         </div>
         <div class="row text-center ng-pane">
-            <div class="col-md-2  " >
-                <button href="#" type="button" class="btn pg-btn-normal">NORMAL BUTTON</button>
-                <p class="text-danger">.pg-btn-normal</p>
+          <div class="col-xs-6 col-sm-4 col-md-2" >
+              <button href="#" type="button" class="btn pg-btn-normal" style="width:120px">NORMAL</button>
+              <p class="text-code" >.pg-btn-normal</p>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-2" >
+              <button href="#" type="button" class="btn pg-btn-light" style="width:120px">LIGHT</button>
+              <p class="text-code">.pg-btn-light</p>
+          </div>
+            <div class="col-xs-6 col-sm-4 col-md-2">
+                <button href="#" type="button" class="btn pg-btn-info" style="width:120px">INFO</button>
+                <p class="text-code">.pg-btn-info</p>
             </div>
-            <div class="col-md-2  ">
-                <button href="#" type="button" class="btn pg-btn-info">INFO BUTTON</button>
-                <p class="text-danger">.pg-btn-info</p>
+            <div class="col-xs-6 col-sm-4 col-md-2">
+                <button href="#" type="button" class="btn pg-btn-success" style="width:120px">SUCCESS</button>
+                <p class="text-code">.pg-btn-success</p>
             </div>
-            <div class="col-md-2  ">
-                <button href="#" type="button" class="btn pg-btn-success">SUCCESS BUTTON</button>
-                <p class="text-danger">.pg-btn-sucdess</p>
+            <div class="col-xs-6 col-sm-4 col-md-2">
+                <button href="#" type="button" class="btn pg-btn-warning" style="width:120px">WARNING</button>
+                <p class="text-code">.pg-btn-warning</p>
             </div>
-            <div class="col-md-2  ">
-                <button href="#" type="button" class="btn pg-btn-warning">WARNING BUTTON</button>
-                <p class="text-danger">.pg-btn-warning</p>
+            <div class="col-xs-6 col-sm-4 col-md-2">
+                <button href="#" type="button" class="btn pg-btn-danger" style="width:120px">DANGER</button>
+                <p class="text-code">.pg-btn-danger</p>
             </div>
-            <div class="col-md-2  ">
-                <button href="#" type="button" class="btn pg-btn-danger">DANGER BUTTON</button>
-                <p class="text-danger">.pg-btn-danger</p>
-            </div>
-            <div class="col-md-2  ">&nbsp;</div>
+            <!-- <div class="col-md-2">&nbsp;</div> -->
         </div>
 
-        <div class="row text-left ng-pane">
+        <div class="row text-center ng-pane">
 
-            <div class="col-md-3  ">
-                <button href="#" type="button" class="btn pg-btn-success pg-btn-lg">LARGE BUTTON</button>
-                <p class="text-danger">
-                .pg-btn-warning .pg-btn-lg:
-                </p>
-            </div>
-            <div class="col-md-5  ">
+          <div class="col-md-3  col-lg-2">
+              <button href="#" type="button" class="btn pg-btn-info pg-btn-sm">SMALL BUTTON</button>
+              <p class="text-code">
+              .pg-btn-warning <br>.pg-btn-lg:
+              </p>
+          </div>
+          <div class="col-md-3 col-lg-4">
+              <button href="#" type="button" class="btn pg-btn-success pg-btn-lg">LARGE BUTTON</button>
+              <p class="text-code">
+              .pg-btn-warning <br>.pg-btn-lg:
+              </p>
+          </div>
+          <div class="col-md-6 col-lg-6">
                 <button href="#" type="button" class="btn pg-btn-warning pg-btn-xl">EXTRA LARGE</button>
-                <p class="text-danger">
-            .pg-btn-warning .pg-btn-xl
+                <p class="text-code">
+            .pg-btn-warning <br>.pg-btn-xl
                 </p>
             </div>
         </div>
@@ -230,7 +241,7 @@
 
 
             <div class="col-md-5" >
-              <p class="text-danger">.navbar-peregrine</p>
+              <p class="text-code">.navbar-peregrine</p>
               can integrate with third-party CMS tools, or content analytics programs.
               Others may provide functionality for digital asset management and web design.
 
@@ -295,15 +306,14 @@
         </div>
         <div class="row text-center  ng-pane">
             <div class="col-md-6" >
-              <div class="quote-wrapper"
-              style="bottom: 0px; position: relative; width: 400px; height:200px; right: 3%; padding-top: 10px">
+              <div class="quote-wrapper text-left" style="position: relative; right: 1%; bottom: 0px;">
 
-                <span class="fa-stack fa-2x">
+                <!-- <span class="fa-stack fa-2x">
                     <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-apple fa-stack-1x fa-inverse"></i>
-                </span>
+                    <i class="fa fa-apple fa-stack-1x"></i>
+                </span> -->
 
-                <!-- <img src="img/logos/hans.png" class="logo-quote" > -->
+                <img src="img/logos/sc.png" class="logo-quote" >
                 <p style="color: #fff">
                   "Foreign companies are tighten what is already one of the world’s most restricted technology regimes."
                 </p>
@@ -314,8 +324,9 @@
             </div>
 
             <div class="col-md-6 text-left" >
-              <p>Use this CSS class to display any quote content</p>
-                <span class="text-danger">.pg-quote-wrapper</span>
+              <p>Use this CSS class to display any quote content. To embed your selected fonts into a webpage,
+                copy this code into the <xmp class="text-code"><div></xmp> of your HTML document.</p>
+                <span class="text-code">.pg-quote-wrapper</span>
             </div>
         </div>
 
@@ -340,28 +351,31 @@
         </div>
         <div class="row text-center align-top ng-pane">
             <div class="col-md-6">
-              <div class="ng-pane" style="padding-top: 25px; background-color: #90a4ae;">
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item active">Home</li>
-                  </ol>
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a  class="page-scroll" href="#page-top">Home</a></li>
-                    <li class="breadcrumb-item active">Library</li>
-                  </ol>
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a  class="page-scroll" href="#page-top">Home</a></li>
-                    <li class="breadcrumb-item"><a  class="page-scroll" href="#buttons">Library</a></li>
-                    <li class="breadcrumb-item active">Data</li>
-                  </ol>
-            </div>
+              <div class="breadcrumb  ng-pane" style="background-color: #90a4ae;">
+              	<a href="#">Home</a>
+              	<a href="#">Products</a>
+              	<a href="#">Model X</a>
+              	<a href="#" class="active">Model Y</a>
+              </div>
+
+
+              <!-- <div class="ng-pane" style="padding-top: 25px; background-color: #90a4ae;"> -->
+                <!-- <ul class="breadcrumb">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Vehicles</a></li>
+                  <li><a href="#">Vans</a></li>
+                  <li><a href="#">Camper Vans</a></li>
+                  <li><a href="#">1989 VW Westfalia Vanagon</a></li>
+                </ul> -->
+
           </div>
 
-          <div class="col-md-6">
-                <p class="text-danger">.pg-breadcrumb</p>
-          </di>
+          <!-- <div class="col-md-6">
+                <p class="text-code">.pg-breadcrumb</p>
+          </di> -->
         </div>
 
-        <p>
+
     </div>
 </section>
 <hr class="pg-line-bar-dotted">

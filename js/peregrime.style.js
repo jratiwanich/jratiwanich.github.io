@@ -1,20 +1,25 @@
 (function($) {
     "use strict"; // Start of use strict
 
+    $('button.btn').on('focus',function(e){
 
-        $('.navbar a.dropdown-toggle').on('click', function(e) {
-            var $el = $(this);
-            var $parent = $(this).offsetParent(".dropdown-menu");
-            $(this).parent("li").toggleClass('open');
+      console.log("button focus="+ e.namespace);
+    });
 
-            if(!$parent.parent().hasClass('nav')) {
-                $el.next().css({"top": $el[0].offsetTop, "left": $parent.outerWidth() - 4});
-            }
 
-            $('.nav li.open').not($(this).parents("li")).removeClass("open");
+      $('.navbar a.dropdown-toggle').on('click', function(e) {
+          var $el = $(this);
+          var $parent = $(this).offsetParent(".dropdown-menu");
+          $(this).parent("li").toggleClass('open');
 
-            return false;
-        });
+          if(!$parent.parent().hasClass('nav')) {
+              $el.next().css({"top": $el[0].offsetTop, "left": $parent.outerWidth() - 4});
+          }
+
+          $('.nav li.open').not($(this).parents("li")).removeClass("open");
+
+          return false;
+      });
 
 
 
