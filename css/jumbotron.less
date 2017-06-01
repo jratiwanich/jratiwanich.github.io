@@ -64,17 +64,32 @@
 
 }
 
-
+.header-gradient {
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    .background-cover;
+    padding: 45px 0;
+    background: rgba(0,0,0,.75);
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+}
 
 
 .header-slide {
     //default image if not set
     background-image: url('../img/bg1.jpg');
+    opacity: 1;
+    //filter: brightness(50%);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
     .background-cover;
     text-align: center;
     color: @theme-primary;
+    &:hover{
+      opacity: 0.9;
+    }
 
 }

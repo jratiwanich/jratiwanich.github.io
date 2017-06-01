@@ -11,11 +11,26 @@
 
 .pg-box-icon{
   //auto scroll for tight screen
-  height: 290px;
+  max-height: 290px;
   >div{
+    padding: 5px 20px 5px 20px;
     min-height: 290px;
     max-height: 290px;
-    overflow: auto;
+    display: block;
+    >p{
+      text-align: justify;
+    }
+    //reduce font for mobile viewing
+    @media(max-width:@screen-xs-min) {
+      padding: 5px 1px 5px 1px;
+      >a{ //resize for font-icons when wrapping with link
+        font-size: 10px;
+      }
+      >p{
+        overflow: hidden;
+        font-size: 12px;
+      }
+    }
   }
 }
 
@@ -50,12 +65,24 @@
 
 .ng-pane{
   .ng-shadow;
+  width: 100%;
   padding: 15px 15px 15px 15px;
   background-color: @theme-secondary;
   @media(max-width:@screen-xs-max) {
     margin-left: 10px;
     margin-right: 10px;
   }
+}
+
+.ng-pane2{
+  .ng-shadow;
+  width: 100%;
+  padding: 15px 15px 15px 15px;
+  background-color: #b2e5ff;  //#f0faff;//#a0cee5; //#B2FFEF; //#2d7599; //@theme-secondary;
+  // @media(max-width:@screen-xs-max) {
+  //   margin-left: 10px;
+  //   margin-right: 10px;
+  // }
 }
 
 .ng-shadow{
@@ -308,6 +335,7 @@ body {
     height: 100%;
     width: 100%;
     .sans-serif-font;
+    text-align: justify;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -340,14 +368,14 @@ h6 {
     //.sans-serif-font;
     .comfortaa-font;
 }
-
-h4{
-  font-weight: 600;
-  letter-spacing: 1.8px;
-  word-spacing: 1.6px;
-  line-height: 24px;
-
-}
+//
+// h4{
+//   font-weight: 600;
+//   letter-spacing: 1.8px;
+//   word-spacing: 1.6px;
+//   line-height: 24px;
+//
+// }
 
 
 p {
@@ -377,6 +405,7 @@ section {
         font-size: 40px;
         margin-top: 0;
         margin-bottom: 15px;
+        text-align: center;
     }
     h3.section-subheading {
         font-size: 16px;
