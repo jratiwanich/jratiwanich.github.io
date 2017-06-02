@@ -1,3 +1,19 @@
+.headline{
+  line-height: 40px;
+  font-weight: 600;
+  .heading-font;
+  text-transform: uppercase;
+  margin-right: 30px;
+  @media(max-width:@screen-sm-max) {
+      font-size: 28px;
+  }
+  @media(max-width:@screen-xs-max) {
+      display: block;
+      line-height: 80px;
+      font-size: 16px;
+  }
+}
+
 .intro-text {
     //border: 1px solid red;
     padding-top: 350px;
@@ -82,23 +98,66 @@
 }
 
 .line-heading{
+  position: relative;
   color: @header-grey;
-  margin-bottom: 60px;
   text-transform: uppercase;
   text-align: center;
   font-size: 18px;
-  >div{
-    &:before{
-      //content: '';
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      background-color: red;
-      top: 11px;
-      left: 0px;
-    }
+  font-weight: bold;
+  line-height: 24px;
+  word-spacing: 1.6px;
+  letter-spacing: 1.8px;
+
+  >span{
+    background: #fff;
+    padding: 0 15px;
+    position: relative;
+    z-index: 1;
+  }
+
+  //for smaller screen, don't show the line
+  @media(min-width:@screen-xs-min) {
+  &:before,
+  &:after{
+    background: #ddd;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 0;
   }
 }
+
+}
+
+
+
+// .line-heading {
+//   position: relative;
+//   text-align: center;
+// }
+//
+// .line-heading span {
+//   background: #fff;
+//   padding: 0 15px;
+//   position: relative;
+//   z-index: 1;
+// }
+//
+// .line-heading:before {
+//   background: #ddd;
+//   content: "";
+//   display: block;
+//   height: 1px;
+//   position: absolute;
+//     top: 50%;
+//   width: 100%;
+// }
+// .line-heading:before {
+//   left: 0;
+// }
 
 .text-dropcap {
   float: left;

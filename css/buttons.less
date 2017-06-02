@@ -68,9 +68,12 @@
   padding: .75rem 1.5rem !important;
 }
 .pg-btn-xl{
-  font-size: 28px !important;
-  font-weight: 800 !important;
-  padding: 20px 40px !important;
+    //too big to fit for mobile
+    @media(min-width:@screen-sm-min) {
+      font-size: 28px !important;
+      font-weight: 800 !important;
+      padding: 20px 40px !important;
+    }
 }
 
 .pg-btn-light{
