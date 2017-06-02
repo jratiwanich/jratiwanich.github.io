@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Paytone+One");
+
 .headline{
   line-height: 40px;
   font-weight: 600;
-  .heading-font;
+  .alt-font;
   text-transform: uppercase;
   margin-right: 30px;
   @media(max-width:@screen-sm-max) {
@@ -18,30 +20,42 @@
     //border: 1px solid red;
     padding-top: 350px;
     padding-bottom: 100px;
+    //padding: 350px 20px 100px 20px;
     text-align: center;
     color: #fff !important;
     .intro-detail {
         .sans-pro-font;
         //border: 1px solid yellow;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 24px;
         margin-top: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     .intro-heading {
         .heading-font;
         font-weight: 800;
-        font-size: 38px;
+        font-size: 60px;
         line-height: 50px;
         margin-bottom: 25px;
 
     }
 
-    @media(max-width:@screen-sm-max) {
+    @media screen and (max-width:@screen-sm-max) and (min-width: @screen-sm-min ) {
         padding-top: 150px;
           .intro-heading {
             font-weight: 400;
+            font-size: 50px;
           }
+    }
 
+    @media screen and (max-width:@screen-xs-max){
+        padding-top: 150px;
+          .intro-heading {
+            font-weight: 400;
+            font-size: 40px;
+            letter-spacing: 1px;
+          }
     }
 }
 
@@ -169,6 +183,10 @@
   padding-left: 3px;
 }
 
+.paytone-font(){
+  font-family: 'Paytone One', sans-serif;
+}
+
 .comfortaa-font(){
   font-family: 'Comfortaa', cursive;
 }
@@ -193,12 +211,15 @@
 }
 
 .heading-font {
-	//font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  .paytone-font;
+  //.serif-font;
+  //.comfortaa-font;
+  //.alt-font;
   //.sans-pro-font;
-  .sans-serif-font;
+  //.sans-serif-font;
 	font-weight: 300;
-	letter-spacing: .5px;
-  font-size: 38px;
+	letter-spacing: 5px;
+  font-size: 60px;
 }
 
 .script-font() {
