@@ -1,10 +1,49 @@
 (function($) {
     "use strict"; // Start of use strict
 
-    $('button.btn').on('focus',function(e){
+    var navbarHeight = $('.navbar-peregrine').height();
 
-      console.log("button focus="+ e.namespace);
-    });
+      $(window).scroll(function() {
+          //768px
+          var screenMin = 768;
+          var width = Math.max( $(window).width(), window.innerWidth);
+          //console.log("Window innerWidth="+ width);
+
+          //only change the navbar color for Desktop screen-sm-min
+          if(width>screenMin){
+
+            var navbarColor = "40,47,55";//color attr for rgba #282f37
+            var smallLogoHeight = 50; //$('.navbar-brand').height();
+            var offsetHeight = 400; //$('.big-logo').height();
+
+
+            var smallLogoEndPos = 0;
+            var smallSpeed = (smallLogoHeight / offsetHeight);
+
+            var ySmall = ($(window).scrollTop() * smallSpeed);
+
+            var navOpacity = ySmall / smallLogoHeight;
+            /*console.log("navOpacity="+ navOpacity+
+                          ", ySmall="+ySmall+
+                          ", smallLogoHeight="+smallLogoHeight+
+                          ", smallSpeed="+smallSpeed);*/
+
+            if  (navOpacity > 1) {
+              navOpacity = 1;
+            }
+            if (navOpacity < 0 ) {
+              navOpacity = 0;
+            }
+            var navBackColor = 'rgba(' + navbarColor + ',' + navOpacity + ')';
+            //console.log("changing navBackColor= "+navBackColor);
+
+            $('.navbar').css({"background-color": navBackColor});
+
+          }
+          //always set to default color
+          $('.navbar').css({"background-color": 'rgba(' + navbarColor + ',1)'});
+
+      });
 
 
       $('.navbar a.dropdown-toggle').on('click', function(e) {
