@@ -2160,8 +2160,13 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   position: absolute;
   bottom: 0px;
   right: 0px;
-  width: 128px; 
+  width: 128px;   
 }
+
+.ts-author-img img{
+  border-radius: 50%;
+}
+
 .testimonial-2:before {
   content: '"';
   position:absolute;
