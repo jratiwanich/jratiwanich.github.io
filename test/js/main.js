@@ -634,7 +634,7 @@ function initMap(){
                   scrollwheel: false,
                   streetViewControl: false,
                   draggable: true,
-                  styles:[ { stylers: [{ invert_lightness: true }, { saturation: -100 }, { lightness: 10 }] } ]
+                  styles:[ { stylers: [{ invert_lightness: false }, { saturation: -100 }, { lightness: 10 }] } ]
               }
           }
       });
