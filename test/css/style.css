@@ -162,6 +162,10 @@ Site: https://themeforest.net/user/abcgomel/portfolio
 
 */
 
+/** DEBUGGING **/
+.debug{
+  border: 1px dotted red;
+}
 /* #PRELOADER  ============================================== */
 /* This only works with JavaScript, 
 if it's not present, don't show loader */
@@ -1121,7 +1125,7 @@ support for no js
 	margin-top:30px;
 }
 .fes2-img {
-  background: url(../images/fes2.jpg) 50% 50% no-repeat;
+  background: url(../images/brick.jpg) 50% 50% no-repeat;
   
   width: 100%;
   display: block;	
@@ -1147,7 +1151,7 @@ support for no js
 	font-weight: 300;
 }
 .fes3-img {
-  background: url(../images/fes3.jpg) 50% 50% no-repeat;
+  background: url(../images/walk.jpg) 50% 50% no-repeat;
   background-size: cover;
   
   width: 100%;
@@ -2296,7 +2300,7 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   will-change: background-position;
   margin: 0;
   padding: 0;
-  background:#2c2c2c url(../images/work-proc-bg.jpg) fixed;
+  background:#2c2c2c url(../images/brick.jpg) fixed;
 }
 .video-ads-text-cont {
   margin:0 auto;

@@ -7,11 +7,19 @@
 		<meta charset=utf-8 >
 		<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 		<meta name="robots" content="index, follow" > 
-		<meta name="keywords" content="Software, Mobile App, Web Design, HTML, CSS, Angular, Java, .NET, AWS, Clouds" > 
+		<meta name="keywords" content="Software, Mobile App, Web Design, HTML, CSS, Angular, Node, Java, .NET, AWS, Clouds" > 
 		<meta name="description" content="Software Development and IT Architecture Design" > 
 		<meta name="author" content="Jak Ratiwanich">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta property="og:title" content="DOLOS + - Home"/>
+    <meta property="og:url" content="http://www.dolosplus.com/" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="DOLOS PLUS IT CONSULTING"/>
+    <meta name="twitter:url" content="http://www.dolosplus.com/" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:card" content="summary" />
 		
 		<!-- FAVICONS -->
     <link rel="shortcut icon" href="images/favicon/favicon.png">
@@ -137,13 +145,17 @@
 									  <ul class="nav navbar-nav">
                       
                       <!-- MENU ITEM -->
-                      <li class="parent current">
+                      <li class="current">
                         <a href="#"><div class="main-menu-title">HOME</div></a>
 
                       </li>
 
+                      <li class="">
+                        <a href="services.html"><div class="main-menu-title">SERVICES</div></a>
+                      </li>
+
                       <!-- MENU ITEM -->
-                      <li class="parent">
+                      <li class="">
                         <a href="about-us.html"><div class="main-menu-title">ABOUT</div></a>
                       </li>
                      			
@@ -254,35 +266,45 @@
 
             <div class="row">
               <!-- TESTIMONIALS -->
+
               <div class="col-md-4 pt-30 pb-40">
+									<div class="skillbar clearfix " data-percent="20%">
+										<div class="skillbar-title"><span>AUTOMOTIVE</span></div>
+										<div class="skillbar-bar"></div>
+										<div class="skill-bar-percent">20%</div>
+									</div> <!-- End Skill Bar -->
+
 									<div class="skillbar clearfix " data-percent="60%">
-										<div class="skillbar-title"><span>DESIGN</span></div>
+										<div class="skillbar-title"><span>FINANCIAL</span></div>
 										<div class="skillbar-bar"></div>
 										<div class="skill-bar-percent">60%</div>
 									</div> <!-- End Skill Bar -->
 
-									<div class="skillbar clearfix " data-percent="80%">
-										<div class="skillbar-title"><span>CONSULTING</span></div>
+                  <div class="skillbar clearfix " data-percent="80%">
+										<div class="skillbar-title"><span>RETAILS & HOSPITALITY</span></div>
 										<div class="skillbar-bar"></div>
 										<div class="skill-bar-percent">80%</div>
 									</div> <!-- End Skill Bar -->
 
 									<div class="skillbar clearfix " data-percent="95%">
-										<div class="skillbar-title"><span>DEVELOPMENT</span></div>
+										<div class="skillbar-title"><span>SMALL BUSINESSES</span></div>
 										<div class="skillbar-bar" ></div>
 										<div class="skill-bar-percent">95%</div>
-									</div> <!-- End Skill Bar -->
+                  </div> <!-- End Skill Bar -->
+                 
+                    <h2 class="">INDUSTRIES <span class="bold">SERVED</span></h2>
+                  
 							</div>
               
               <!-- FEATURES -->
-							<div class="col-md-8 col-lg-7 col-lg-offset-1 ">
+							<div class="col-md-8 col-lg-7 col-lg-offset-1">
                     
                 <div class="row">
                     
                   <div class="col-md-6 col-sm-6 pb-10">
                     <div class="fes5-box wow fadeIn" >
                       <h3>CONSULTING</h3>
-                      <p>Chat with us at no cost. We are keen to hear your ideas and see where that takes us</p>
+                      <p>Chat with us. We are keen to hear your ideas and see where that takes us</p>
                     </div>
                   </div>
                       
@@ -326,13 +348,13 @@
         <!-- FEATURES 7 -->
         <div class="page-section grey-light-bg clearfix">
           <div class="fes7-img-cont col-md-5">
-            <div class="fes7-img" style="background-image: url(images/fes7.jpg)"></div>
+            <div class="fes7-img" style="background-image: url(images/design.jpg)"></div>
           </div>
           
           <div class="container">
             <div class="row">
               <div class="col-md-6 col-md-offset-6 fes7-text-cont p-80-cont">
-                <h1><span class="font-light">Keep our client happy is our philosophy.  
+                <h1><span class="font-light">
                   You are part of our team to make your product a success.</span></h1>
                 <p class="mb-60">
                   At DOLOS PLUS, we deliver what you need at the minimum viable product with the finest quality.                
@@ -358,7 +380,7 @@
                       </div>
                       <h3>UI/UX Design</h3>
                       <p>Specialized in building UI/UX design, prototyping and web development. 
-                         Using the latest UI technologies like Angular, React or WebGL gives us the mean of building a better product.</p>
+                         Using the latest UI technologies gives us the mean of building a better product.</p>
                     </div>
                   </div>
                       
@@ -374,7 +396,7 @@
                       <h3>Build with Clouds</h3>
                       <p>Utilizing the latest technologies such as AWS and Google Clouds. 
                         No more headache of keeping your computer running all the times. 
-                        We are using Serverless technology to provide the data service you need.</p>
+                      </p>
                     </div>
                   </div>
                       
@@ -397,7 +419,7 @@
         </div>        
  
 				<!-- FEATURES 8 -->
-				<div class="page-section fes4-cont">
+				<!-- <div class="page-section fes4-cont">
 					<div class="container">
             <div class="row">
            
@@ -407,10 +429,10 @@
 								  	<div class="fes8-box-icon">
 								  		<div class="icon icon-basic-smartphone"></div>
 								  	</div>
-								  	<h3>RETINA READY GRAPHICS</h3>
+								  	<h3>MOBILE DEVELOPMENT</h3>
 								  </div>
 								  <div>
-								     Maecenas luctus nisi in sem fermentum blat. In nec  elit solliudin, elementum. 
+								     We'd love to hear about your new App idea.
 								  </div>
 								</div>
 							</div>
@@ -420,7 +442,7 @@
 								  	<div class="fes8-box-icon">
 								  		<div class="icon icon-basic-mixer2"></div>
 								  	</div>
-								  	<h3>PARALLAX SUPPORT</h3>
+								  	<h3>UX/UI DESIGN</h3>
 								  </div>
 								  <div>
 								     Maecenas luctus nisi in sem fermentum blat. In nec  elit solliudin, elementum. 
@@ -433,7 +455,7 @@
 								  	<div class="fes8-box-icon">
 								  		<div class="icon icon-basic-share"></div>
 								  	</div>
-								  	<h3>ENDLESS POSSIBILITIES</h3>
+								  	<h3>SOFTWARE ARCHITECTURE</h3>
 								  </div>
 								  <div>
 								     Seductio maesto nisi in sem fermentum blat. In nec elit solliudin, elementum.
@@ -450,7 +472,7 @@
 								  	<div class="fes8-box-icon">
 								  		<div class="icon icon-basic-paperplane"></div>
 								  	</div>
-								  	<h3>CLEAR DESIGN</h3>
+								  	<h3>WEB DEVELOPMENT</h3>
 								  </div>
 								  <div>
 								    Donec vel luctus nisi in sem fermentum blat. In nec elit solliudin, elementum.
@@ -530,15 +552,15 @@
 						
             </div>
 					</div>
-				</div>
+				</div> -->
         
         <!-- COUNTERS 1 -->
-        <div id="counter-1" class="page-section p-80-cont grey-light-bg">
+        <!-- <div id="counter-1" class="page-section p-80-cont grey-light-bg">
           <div class="container">
         
             <div  class="row text-center">
                             
-              <!-- Item -->
+            
               <div class="col-xs-6 col-sm-3">
                 <div class="count-number">
                   175
@@ -548,7 +570,7 @@
                 </div>
               </div>
               
-              <!-- Item -->
+          
               <div class="col-xs-6 col-sm-3">
                 <div class="count-number">
                  100
@@ -557,8 +579,7 @@
                   <span class="count-title">HAPPY CLIENTS</span>
                 </div>
               </div>
-              
-              <!-- Item -->
+            
               <div class="col-xs-6 col-sm-3">
                 <div class="count-number">
                   51
@@ -568,7 +589,7 @@
                 </div>
               </div>
               
-              <!-- Item -->
+         
               <div class="col-xs-6 col-sm-3">
                 <div class="count-number">
                  4000
@@ -580,7 +601,7 @@
               
             </div>
           </div>
-        </div>
+        </div> -->
         
 				<!-- WORK PROCESS 1 -->
 				<div class="page-section" >
@@ -589,7 +610,7 @@
 							
 							<div class="col-md-4 ">
 								<div class="mb-50">
-								  <h2 class="section-title">WORK <span class="bold">PROCESS</span></h2>
+								  <h2 class="section-title">GOT <span class="bold">IDEA?</span></h2>
 								</div>
                 <p class="mb-50 " >You have an idea, start from there. Come talk to us. We'd love to put our creative thinking hat for you.</p>
 							</div>
@@ -660,11 +681,11 @@
 					<div class="container">
             <div class="video-ads-text-cont clearfix">
               <span class="video-ads-text">BE CREATIVE</span>
-              <span class="video-ads-a">
+              <!-- <span class="video-ads-a">
                 <a class="popup-youtube" href="https://www.youtube.com/watch?v=0gv7OC9L2s8">
                   <span class="icon icon-music-play-button"></span>
                 </a>
-              </span>
+              </span> -->
               <span class="video-ads-text">WITH DOLOS+</span>
             </div>
 					</div>
@@ -685,9 +706,9 @@
                       <div class="col-md-6 col-sm-6">
                         <div class="fes7-box mb-20 wow fadeIn" >
                           <div class="fes7-box-icon">
-                            <div class="icon icon-basic-mixer2"></div>
+                            <div class="icon icon-basic-bolt"></div>
                           </div>
-                          <h3>FULLY RESPONSIVE</h3>
+                          <h3>TAKE ACTION</h3>
                           
                         </div>
                       </div>
@@ -697,7 +718,7 @@
                           <div class="fes7-box-icon">
                             <div class="icon icon-basic-lightbulb"></div>
                           </div>
-                          <h3>RETINA READY</h3>
+                          <h3>PUT YOUR BRAIN TO WORK</h3>
                           
                         </div>
                       </div>
@@ -711,7 +732,7 @@
                       <div class="fes7-box-icon">
                         <div class="icon icon-basic-helm"></div>
                       </div>
-                      <h3>UNIQUE DESIGN</h3>
+                      <h3>CUSTOM DESIGN</h3>
                       
                     </div>
                   </div>
@@ -719,9 +740,9 @@
                   <div class="col-md-6 col-sm-6">
                     <div class="fes7-box mb-20 wow fadeIn"  data-wow-delay="600ms">
                       <div class="fes7-box-icon">
-                        <div class="icon icon-basic-settings"></div>
+                        <div class="icon icon-basic-paperplane"></div>
                       </div>
-                      <h3>EASY TO CUSTOMIZE</h3>
+                      <h3>LAUNCH TO APP</h3>
                      
                     </div>
                   </div>
@@ -747,96 +768,7 @@
           <a class="port-view-more-dark " href="contact.html">LET'S WORK TOGETHER</a>
         </div>
 
-        <!-- BLOG 2 -->
-        <div class="page-section pt-110-b-30-cont">
-          <div class="container">
-                
-            <div class="mb-50">
-              <h2 class="section-title pr-0">LATEST <span class="bold">NEWS</span><a href="blog-right-sidebar.html" class="section-more right">OUR BLOG</a>
-                  </h2>
-            </div>
-            
-            <div class="row">
-              
-              <!-- Post Item 1 -->
-              <div class="col-md-12 wow fadeIn pb-30" >
-                <div class="row">
-                
-                  <div class="col-md-4 blog2-post-title-cont">
-                    <div class="post-prev-date-cont">
-                      <span class="blog2-date-numb">21</span><span class="blog2-month">July</span>
-                    </div>
-                    <div class="post-prev-title">
-                      <h3><a href="blog-single-sidebar-right.html">TIME FOR MINIMALISM</a></h3>
-                      <div class="post-prev-info">
-                        <a href="#">DESIGN</a><span class="slash-divider">/</span><a href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel">JOHN DOE</a>
-                      </div>
-                    </div>
-                  </div>
-                    
-                  <div class="col-md-8">
-                    <div class="blog2-post-prev-text">                     
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, excepturi modi cupiditate ipsam molestiae eveniet incidunt nostrum atque alias dicta? Quos, quisquam iusto numquam dicta vel voluptatem aperiam voluptas similique!                      
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
-              
-              <!-- Post Item 2 -->
-              <div class="col-md-12 wow fadeIn pb-30" >
-                <div class="row">
-                
-                  <div class="col-md-4 blog2-post-title-cont">
-                    <div class="post-prev-date-cont">
-                      <span class="blog2-date-numb">17</span><span class="blog2-month">August</span>
-                    </div>
-                    <div class="post-prev-title">
-                      <h3><a href="blog-single-sidebar-right.html">NEW TRENDS IN WEB</a></h3>
-                      <div class="post-prev-info">
-                        <a href="#">DESIGN</a><span class="slash-divider">/</span><a href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel">JOHN DOE</a>
-                      </div>
-                    </div>
-                  </div>
-                    
-                  <div class="col-md-8">
-                    <div class="blog2-post-prev-text">                     
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, excepturi modi cupiditate ipsam molestiae eveniet incidunt nostrum atque alias dicta? Quos, quisquam iusto numquam dicta vel voluptatem aperiam voluptas similique!                      
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
-
-              <!-- Post Item 3 -->
-              <div class="col-md-12 wow fadeIn pb-30" >
-                <div class="row">
-                
-                  <div class="col-md-4 blog2-post-title-cont">
-                    <div class="post-prev-date-cont">
-                      <span class="blog2-date-numb">1</span><span class="blog2-month">September</span>
-                    </div>
-                    <div class="post-prev-title">
-                      <h3><a href="blog-single-sidebar-right.html">THE SOUND OF LIFE</a></h3>
-                      <div class="post-prev-info">
-                        <a href="#">DESIGN</a><span class="slash-divider">/</span><a href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel">JOHN DOE</a>
-                      </div>
-                    </div>
-                  </div>
-                    
-                  <div class="col-md-8">
-                    <div class="blog2-post-prev-text">                     
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, excepturi modi cupiditate ipsam molestiae eveniet incidunt nostrum atque alias dicta? Quos, quisquam iusto numquam dicta vel voluptatem aperiam voluptas similique!                      
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
-
-            </div>
-            
-          </div>
-        </div>
+   
         
         <!-- NEWS LETTER -->
         <div class="page-section nl-cont">
@@ -896,7 +828,6 @@
                 <ul class="links-list a-text-cont" >
                   <li><a href="about-us.html">COMPANY</a></li>
                   <li><a href="services.html">WHAT WE DO</a></li>
-                  <li><a href="terms.html">TERMS OF SERVICE</a></li>
                   <li><a href="contact.html">CONTACT</a></li>
                 </ul>
               </div>
@@ -906,24 +837,24 @@
                 <div id="post-list-footer">
 
                   <div class="post-prev-title">
-                    <h3><a class="a-text"  href="blog-single-sidebar-right.html">New trends in web design</a></h3>
+                    <h3><a class="a-text" target="_blank" href="https://99designs.com/blog/trends/web-design-trends-2018/">New trends in web design</a></h3>
                   </div>
                   <div class="post-prev-info">
                     July 10
                   </div>
                    
                   <div class="post-prev-title">
-                    <h3><a class="a-text"  href="blog-single-sidebar-right.html">Cloud Architecture</a></h3>
+                    <h3><a class="a-text" target="_blank"   href="https://www.capgemini.com/2018/01/current-and-future-trends-for-cloud-architectures/">Cloud Architecture</a></h3>
                   </div>
                   <div class="post-prev-info">
-                    August 10
+                    January 17
                   </div>
                    
                   <div class="post-prev-title">
-                    <h3><a class="a-text"  href="blog-single-sidebar-right.html">Time for minimalism</a></h3>
+                    <h3><a class="a-text"  target="_blank"  href="https://www.entrepreneur.com/article/313728">Mobile App trends to watch</a></h3>
                   </div>
                   <div class="post-prev-info">
-                     September 21
+                     June 6
                   </div>
 
                 </div>                  

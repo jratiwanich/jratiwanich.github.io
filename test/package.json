@@ -1,0 +1,26 @@
+{
+  "name": "dolos-plus-web",
+  "version": "1.0.0",
+  "description": "DOLOS+ Product website",
+  "main": "no",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.4.1",
+    "gulp-header": "^1.8.8",
+    "gulp-less": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp browserSync",
+    "dev": "gulp dev",
+    "build": "echo \"GULP is building everything...\" && gulp"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "Jak Ratiwanich"
+}
